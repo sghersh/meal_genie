@@ -1,0 +1,49 @@
+.parallax-scrolling {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 1;
+}
+
+.parallax-star-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+
+#stars1 {
+    background-image: url('../assets/Stars1.png');
+    animation: moveStars 100s linear infinite;
+    z-index: 2;
+    transform: translateY(var(--stars1-translateY));
+}
+
+#stars2 {
+    background-image: url('../assets/Stars2.png');
+    animation: moveStars 150s linear infinite;
+    z-index: 3;
+    transform: translateY(var(--stars2-translateY));
+}
+
+#stars3 {
+    background-image: url('../assets/Stars3.png');
+    animation: moveStars 200s linear infinite;
+    z-index: 2;
+    transform: translateY(var(--stars3-translateY));
+}
+/*
+@keyframes moveStars {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh); 
+    }
+}*/

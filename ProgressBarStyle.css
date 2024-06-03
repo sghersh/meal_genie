@@ -1,0 +1,38 @@
+.wrapper {
+    position: relative;
+    width: 100%; 
+    overflow: visible;
+  }
+  
+  #rocket {
+    position: absolute;
+    height: 80px; 
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: left 400ms; /* Smooth transition for the rocket movement */
+    z-index: 5;
+  }
+  
+  .custom-progress-bar { /* Progress bar container */
+    height: 20px; 
+    background-color: #000080; /* Deep space blue */
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .custom-progress-bar .progress-bar {
+    background-color: #ff712f; /* Fire progress color */
+    z-index: 1;
+  }
+
+  @keyframes idleRocket {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px); /* movement amount */
+    }
+    
+  }
+  

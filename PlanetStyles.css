@@ -1,0 +1,29 @@
+#planet {
+    background-image: url('../assets/planet2.png');
+    z-index: 3;
+    background-size: cover;
+}
+
+.planetLayer {
+    position: absolute;
+    top: 130px;
+    right: -40px;
+    width: 70vh;
+    height: 70vh;
+    z-index: 3;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.planetLayer.spin {
+    animation: spin 20s linear infinite;
+}
